@@ -62,18 +62,55 @@
             </div>
         </div>
 
-        <!-- AI Response Area -->
-        {% if ai_response %}
-        <div class="ai-response-container">
+        {% if conversation_history %}
+    <div style="max-width: 800px; margin: 2rem auto;">
+        <h3 style="text-align: center; color: var(--neon-cyan); font-family: 'Orbitron', monospace; margin-bottom: 2rem;">
+            💬 AI Conversation History
+        </h3>
+        
+        {% for conversation in conversation_history reversed %}
+        <div class="ai-response-container" style="margin-bottom: 2rem;">
+            <!-- User Query -->
+            <div style="background: rgba(0, 212, 255, 0.1); border: 1px solid var(--neon-cyan); border-radius: 15px; padding: 1rem; margin-bottom: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <span style="font-size: 1.2rem;">👤</span>
+                    <strong style="color: var(--neon-cyan);">You asked:</strong>
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">{{ conversation.timestamp }}</span>
+                </div>
+                <p style="color: var(--text-light); font-style: italic;">"{{ conversation.query }}"</p>
+            </div>
+            
+            <!-- AI Response -->
             <div class="ai-response-header">
                 <div class="ai-avatar">🤖</div>
-                <h3>AI Response</h3>
+                <div class="ai-response-meta">
+                    <h4>AI Response</h4>
+                    <span class="response-timestamp">{{ conversation.timestamp }}</span>
+                </div>
+                <div class="response-actions">
+                    <button class="response-action-btn" onclick="copyResponse(this)" title="Copy Response">
+                        📋
+                    </button>
+                </div>
             </div>
             <div class="ai-response-content">
-                {{ ai_response|linebreaks }}
+                {{ conversation.response|linebreaks }}
             </div>
         </div>
-        {% endif %}
+        {% endfor %}
+        
+        <!-- Clear History Button -->
+        <div style="text-align: center; margin-top: 2rem;">
+            <form method="post" style="display: inline;">
+                {% csrf_token %}
+                <input type="hidden" name="clear_history" value="1">
+                <button type="submit" style="background: rgba(255, 100, 100, 0.2); border: 1px solid #ff6b6b; border-radius: 15px; padding: 0.75rem 1.5rem; color: #ff6b6b; font-family: 'Rajdhani', sans-serif; cursor: pointer; transition: all 0.3s ease;">
+                    🗑️ Clear Conversation History
+                </button>
+            </form>
+        </div>
+    </div>
+    {% endif %}
 
         <!-- Call to action buttons -->
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 3rem;">
