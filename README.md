@@ -1,4 +1,4 @@
-# ✦ Glintly
+# ✦ Lumioly
 ### Your curated window into AI — powered by Gemini.
 
 > Built by **Nungo Tshidzumba** | Creative Technologist  
@@ -6,15 +6,15 @@
 
 ---
 
-## What is Glintly?
+## What is Lumioly?
 
-Glintly is an intelligent AI news and tools platform that automatically surfaces what matters in the world of artificial intelligence — without you having to hunt for it.
+Lumioly is an intelligent AI news and tools platform that automatically surfaces what matters in the world of artificial intelligence — without you having to hunt for it.
 
-The AI space moves at a relentless pace. New models, tools, research papers, and breakthroughs drop every single day. Glintly solves the signal-to-noise problem by aggregating live news from the top AI publications and curating a directory of 47+ essential AI tools — all in one clean, editorial-quality interface.
+The AI space moves at a relentless pace. New models, tools, research papers, and breakthroughs drop every single day. Lumioly solves the signal-to-noise problem by aggregating live news from the top AI publications and curating a directory of 47+ essential AI tools — all in one clean, editorial-quality interface.
 
 Every tool page comes with an instant AI explanation powered by Google Gemini and an automatically fetched YouTube tutorial, so users go from discovery to understanding in seconds.
 
-**Glintly is built to run itself.** No manual content updates. No admin babysitting. The news refreshes from live RSS feeds on every page load, and the tools directory is seeded with real, curated data that can be re-seeded with a single command.
+**Lumioly is built to run itself.** No manual content updates. No admin babysitting. The news refreshes from live RSS feeds on every page load, and the tools directory is seeded with real, curated data that can be re-seeded with a single command.
 
 ---
 
@@ -44,7 +44,7 @@ Every tool page comes with an instant AI explanation powered by Google Gemini an
 - Featured and Popular badges
 
 ### ✨ Per-Tool AI Explanations
-- Every tool detail page has an "Ask Glintly AI" panel
+- Every tool detail page has an "Ask Lumioly AI" panel
 - Gemini generates a conversational, plain-English explanation on demand
 - Auto-generates a smart query if none is configured — fully autonomous
 - "Thinking..." loading state for smooth UX
@@ -86,7 +86,7 @@ Every tool page comes with an instant AI explanation powered by Google Gemini an
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Nungo/Glintly.git
+git clone https://github.com/Nungo/Lumioly.git
 cd glintly
 
 # 2. Create and activate virtual environment
@@ -158,7 +158,7 @@ glintly/
 
 ## 🌍 Deployment (Railway)
 
-Glintly is deployed on [Railway](https://railway.app).
+Lumioly is deployed on [Railway](https://railway.app).
 
 **Environment variables required in Railway dashboard:**
 - `SECRET_KEY`
@@ -172,10 +172,10 @@ Glintly is deployed on [Railway](https://railway.app).
 
 ## 🗺 Roadmap — What's Next (Phase 2)
 
-These are the planned upgrades that will take Glintly from a strong Phase 1 to a fully scalable platform:
+These are the planned upgrades that will take Lumioly from a strong Phase 1 to a fully scalable platform:
 
 ### 🗄 Supabase Database Migration
-Replace SQLite with Supabase (PostgreSQL) for persistent, scalable data storage. This enables the ETL pipeline below and makes Glintly pitch-ready as a production architecture.
+Replace SQLite with Supabase (PostgreSQL) for persistent, scalable data storage. This enables the ETL pipeline below and makes Lumioly pitch-ready as a production architecture.
 
 ### ⚙️ Automated ETL News Pipeline
 Instead of fetching RSS feeds live on every page load, build a background pipeline:
@@ -185,16 +185,16 @@ Instead of fetching RSS feeds live on every page load, build a background pipeli
 4. **Serve** — Pages query the database instead of live feeds (faster, persistent, searchable)
 
 ### 🧠 Per-Article AI Summarization
-Use Gemini to generate a one-sentence "why this matters" summary for each article during the ETL step. Makes Glintly feel like an actual intelligent curator rather than a feed aggregator.
+Use Gemini to generate a one-sentence "why this matters" summary for each article during the ETL step. Makes Lumioly feel like an actual intelligent curator rather than a feed aggregator.
 
 ### 🔄 Auto-Updating Tools Directory
 Pull new tools automatically from Product Hunt API or Futurepedia RSS daily, with AI-generated descriptions. Currently seeded manually with 47 curated tools.
 
 ### 📊 Analytics Dashboard
-Track which tools and topics users are asking Glintly AI about. Surfaces trending AI tools and topics automatically.
+Track which tools and topics users are asking Lumioly AI about. Surfaces trending AI tools and topics automatically.
 
 ### 🌐 Public API
-Expose a REST API so developers can query Glintly's curated tool data and AI news programmatically.
+Expose a REST API so developers can query Lumioly's curated tool data and AI news programmatically.
 
 ---
 

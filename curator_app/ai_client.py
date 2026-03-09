@@ -26,7 +26,7 @@ def get_explanation(query: str, model_name: str = "gemini-2.5-flash-lite"):
     if not GEMINI_API_KEY:
         return "API key not configured. Please add GEMINI_API_KEY to your .env file."
 
-    prompted_query = f"""You are Glintly AI, a friendly assistant inside a clean chat interface.
+    prompted_query = f"""You are Lumioly AI, a friendly assistant inside a clean chat interface.
 Answer in 3-5 sentences max. Be conversational and direct.
 Use plain text only — no bullet points, no bold, no markdown, no asterisks, no headings.
 Just natural, clear sentences as if explaining to a smart friend.
@@ -71,6 +71,6 @@ if __name__ == '__main__':
     if not GEMINI_API_KEY:
         print("API Key not found. Set GEMINI_API_KEY in your .env file.")
     else:
-        print("Testing Glintly AI...")
+        print("Testing Lumioly AI...")
         result = get_explanation("What is Hugging Face Transformers?")
         print(result)

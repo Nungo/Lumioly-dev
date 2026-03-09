@@ -1,5 +1,5 @@
 """
-Management command to seed Glintly with 45 curated AI tools.
+Management command to seed Lumioly with 45 curated AI tools.
 Run with: py manage.py seed_tools
 Run with --clear to wipe existing tools first: py manage.py seed_tools --clear
 """

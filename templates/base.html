@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{% block title %}Glintly{% endblock %} — AI Intelligence Hub</title>
+  <title>{% block title %}Lumioly{% endblock %} — AI Intelligence Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -143,7 +143,7 @@
           <path d="M5 3L5.75 5.25L8 6L5.75 6.75L5 9L4.25 6.75L2 6L4.25 5.25Z"/>
           <path d="M19 15L19.75 17.25L22 18L19.75 18.75L19 21L18.25 18.75L16 18L18.25 17.25Z"/>
         </svg>
-        <span class="nav-logo-text">Glintly</span>
+        <span class="nav-logo-text">Lumioly</span>
       </a>
 
       <ul class="nav-links">
@@ -161,13 +161,13 @@
       <a href="/" {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %} onclick="closeMenu()">Home</a>
       <a href="/news/" {% if request.resolver_match.url_name == 'news_list' %}class="active"{% endif %} onclick="closeMenu()">News</a>
       <a href="/tools/" {% if request.resolver_match.url_name == 'tool_list' %}class="active"{% endif %} onclick="closeMenu()">Tools</a>
-      <div class="mobile-nav-footer">Glintly — AI Intelligence Hub</div>
+      <div class="mobile-nav-footer">Lumioly — AI Intelligence Hub</div>
     </div>
 
     <main>{% block content %}{% endblock %}</main>
 
     <footer>
-      <span>© 2026 <span class="gold">Glintly</span> — Built by Nungo Tshidzumba</span>
+      <span>© 2026 <span class="gold">Lumioly</span> — Built by Nungo Tshidzumba</span>
       <span>Powered by <span class="gold">Gemini AI</span></span>
     </footer>
   </div>
