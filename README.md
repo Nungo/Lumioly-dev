@@ -2,8 +2,7 @@
 
 > AI-powered news and tools intelligence platform — live articles, curated AI tools, and Gemini-powered "Why This Matters" analysis in one place.
 
-**Live Demo:** [your-railway-url.up.railway.app](https://your-railway-url.up.railway.app)  
-**Figma / UX Design:** [add when done]  
+**Live Demo:** [your-railway-url.up.railway.app](https://web-production-2092.up.railway.app/)    
 **Built for:** Dev Season of Code (DSOC) 2026
 
 ---
@@ -150,7 +149,7 @@ python manage.py migrate && python manage.py seed_tools && python manage.py coll
 ## Built by
 
 **Nungo Tshidzumba** — Creative Technologist, Pretoria, South Africa  
-[Portfolio](https://nungotshidzumba.com) · [LinkedIn](https://linkedin.com/in/yourprofile)
+[Portfolio](https://nungotshidzumba.com) · [LinkedIn](https://za.linkedin.com/in/nungo-tshidzumba-7bb73b1b1)
 
 ---
 
