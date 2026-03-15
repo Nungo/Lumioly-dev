@@ -2,7 +2,7 @@
 
 > AI-powered news and tools intelligence platform — live articles, curated AI tools, and Gemini-powered "Why This Matters" analysis in one place.
 
-**Live Demo:** [your-railway-url.up.railway.app](https://web-production-2092.up.railway.app/)    
+**Live Demo:** [https://web-production-2092.up.railway.app/]  
 **Built for:** Dev Season of Code (DSOC) 2026
 
 ---
