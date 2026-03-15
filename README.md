@@ -48,8 +48,8 @@ Every page load pulls fresh articles from five major tech sources. Every tool ha
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/Nungo/Glintly.git
-cd Glintly
+git clone https://github.com/Nungo/Lumioly.git
+cd Lumioly
 ```
 
 ### 2. Create virtual environment
